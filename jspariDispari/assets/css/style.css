@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    width: 50%;
+    height: 250px;
+    border: 1px solid paleturquoise;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.d-flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.btn, #numero{
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+}
+#pari{
+    background-color: palegreen;
+}
+#dispari{
+    background-color: palevioletred;
+}
