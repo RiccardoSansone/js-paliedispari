@@ -10,7 +10,7 @@ let dispariUt = document.getElementById('dispari');
 let pariDispari; //true se è pari, false se è dispari
 
 pariUt.addEventListener('click', function () {
-    if(result(true) == true){
+    if(result(true)){
         console.log('hai vinto');
     } else{
         console.log('hai perso');
@@ -18,7 +18,7 @@ pariUt.addEventListener('click', function () {
 })
 
 dispariUt.addEventListener('click', function () {
-    if(result(false) == true){
+    if(result(false)){
         console.log('hai vinto');
     } else {
         console.log('hai perso');
@@ -27,10 +27,13 @@ dispariUt.addEventListener('click', function () {
 
 function result (pariDispari){
     let pcNumber = Number(Math.floor(Math.random()* 5) + 1);
-    let randomNum = pcNumber + sceltaUt.value;
+    let randomNum = pcNumber + Number(sceltaUt.value);
+    console.log("Scelta: " + pariDispari + " numero inserito: " + sceltaUt.value + " numero generato: " + pcNumber + " somma: " + randomNum  );
     if(pariDispari == true && randomNum% 2 == 0){
+        console.log("pari");
         return true;
     } else if(pariDispari == false && randomNum% 2 != 0){
+        console.log("dispari");
        return true; 
     }
     return false;

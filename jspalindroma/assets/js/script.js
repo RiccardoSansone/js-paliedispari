@@ -14,5 +14,5 @@ control.addEventListener('click', function(){
         }
         lastletter--;
     }
-    console.log(result);
+    console.log(r  );
 })
